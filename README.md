@@ -24,29 +24,24 @@ Schéma Projet 1 CRM Hotêllerie
   # Table:  Invoice
   - id_invoice
   - id_contact (FK)
-  - adresse (FK)
-  - raison social ou privé (FK)
-  - mail (FK)
-  - téléphone (FK)
-  - id_product (FK)
-  - libelle_product (FK)
-  - prix_ht (FK)
-  - tva (FK)
+  - nom
+  - adresse 
+  - raison social ou privé 
+  - mail 
+  - téléphone
+  - id_product 
+  - libelle_product 
+  - prix_ht 
+  - tva 
 
   # Table:  sales_order_line
   - id_sales_order_line
   - id_sales_order (FK)
   - id_product (FK)
   - id_contact (FK)
-  - adresse (FK)
-  - raison social ou privé (FK)
-  - mail (FK)
-  - téléphone (FK)
   - genre
   - quantité
   - date
-  - prix_ht (FK)
-  - tva (FK)
   - status_Paiement
 
   # Table:  Product
