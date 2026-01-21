@@ -1,4 +1,4 @@
-# sch-ma_Bdd_Projet1
+# schéma_Bdd_Projet1
 Schéma Projet 1 CRM Hotêllerie
 
 
@@ -38,7 +38,8 @@ Schéma Projet 1 CRM Hotêllerie
   - id_sales_order_line
   - id_sales_order (FK)
   - id_product (FK)
-  - prix_total
+  - prix_ht
+  - tva
   - id_contact (FK)
   - genre
   - quantité
