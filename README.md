@@ -36,7 +36,12 @@ Schéma Projet 1 CRM Hotêllerie
   # Table:  sales_order_line
   - id_sales_order_line
   - id_sales_order (FK)
-  - id_product (FK) 
+  - id_product (FK)
+  - id_contact (FK)
+  - adresse (FK)
+  - raison social ou privé (FK)
+  - mail (FK)
+  - téléphone (FK)
   - genre
   - quantité
   - date
