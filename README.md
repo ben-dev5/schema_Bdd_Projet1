@@ -32,7 +32,19 @@ Schéma Projet 1 CRM Hotêllerie
   - id_product 
   - libelle_product 
   - prix_ht 
-  - tva 
+  - tva
+  - status_Paiement
+
+    # Table:  invoice_order_line
+  - id_invoice_order_line
+  - id_invoice (FK)
+  - id_product (FK)
+  - prix_ht
+  - tva
+  - id_contact (FK)
+  - quantité
+  - date
+
 
   # Table:  sales_order_line
   - id_sales_order_line
@@ -44,7 +56,7 @@ Schéma Projet 1 CRM Hotêllerie
   - genre
   - quantité
   - date
-  - status_Paiement
+
 
   # Table:  Product
   - id_product
@@ -53,7 +65,7 @@ Schéma Projet 1 CRM Hotêllerie
   - tva
   - prix_ttc
 
- # Table:  Dashboard
+ # Dashboard
  - sum_facture_mois
  - liste_cinq_clients
  - evolution_Ca_six_moix
