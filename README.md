@@ -38,6 +38,7 @@ Schéma Projet 1 CRM Hotêllerie
   - id_sales_order_line
   - id_sales_order (FK)
   - id_product (FK)
+  - prix_total
   - id_contact (FK)
   - genre
   - quantité
