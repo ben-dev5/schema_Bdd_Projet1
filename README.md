@@ -5,8 +5,8 @@ Schéma Projet 1 CRM Hotêllerie
 
 # Gestion commercial et achats :
    
-   # Table:  Document 
-   - id_document
+   # Table:  sales_order 
+   - id_sales_order
    - id_contact (FK)
    - genre (séminaire, repas, buffet, linge)
    - type (devis, commande ou facture)
@@ -15,18 +15,33 @@ Schéma Projet 1 CRM Hotêllerie
   - id_contact
   - type (client, fournisseur)
   - nom
+  - prénom
   - adresse
   - raison social ou privé
-  - adresse
   - mail
   - téléphone
 
-  # Table:  Document_line
-  - id_Prestation
-  - id_document (FK)
+  # Table:  Invoice
+  - id_invoice
+  - id_contact (FK)
+  - adresse (FK)
+  - raison social ou privé (FK)
+  - mail (FK)
+  - téléphone (FK)
+  - id_product (FK)
+  - libelle_product (FK)
+  - prix_ht (FK)
+  - tva (FK)
+
+  # Table:  sales_order_line
+  - id_sales_order_line
+  - id_sales_order (FK)
   - id_product (FK) 
   - genre
   - quantité
+  - date
+  - prix_ht (FK)
+  - tva (FK)
   - status_Paiement
 
   # Table:  Product
